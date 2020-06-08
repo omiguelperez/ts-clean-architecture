@@ -2,6 +2,7 @@ import { TaskReminder } from './TaskReminder'
 import { Author } from './Author'
 
 export interface ITask {
+  uuid?: string
   author: Author
   title: string
   order: number
@@ -11,13 +12,15 @@ export interface ITask {
 
 
 export class Task implements ITask {
+  uuid?: string
   author: Author
   title: string
   order: number
   reminders?: Array<TaskReminder> = []
   createdAt?: Date
 
-  constructor ({ author, title, order }: ITask) {
+  constructor ({ uuid, author, title, order }: ITask) {
+    this.uuid = uuid
     this.author = author
     this.title = title
     this.order = order

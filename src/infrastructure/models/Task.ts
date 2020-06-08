@@ -1,8 +1,14 @@
 import { getModelForClass, prop, Ref } from '@typegoose/typegoose'
 import { Author } from './Author'
-import { Connection } from "mongoose"
+import { Connection } from 'mongoose'
+import * as uuid from 'uuid'
 
 export class Task {
+
+  @prop({
+    default: uuid.v4
+  })
+  uuid: string
 
   @prop()
   title: string

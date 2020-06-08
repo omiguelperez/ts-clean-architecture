@@ -7,7 +7,7 @@ import {
   CreateAuthorUseCase
 } from '../../../application/use-cases/authors/CreateAuthorUseCase'
 import { ListAuthorsUseCase } from '../../../application/use-cases/authors/ListAuthorsUseCase'
-import { AuthorOutput } from '../../../application/use-cases/authors/AuthorUseCase'
+import { AuthorOutput } from '../../../application/use-cases/authors/AuthorOutput'
 
 
 @OpenAPI({})

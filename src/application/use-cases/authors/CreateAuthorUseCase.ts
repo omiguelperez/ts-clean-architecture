@@ -2,7 +2,7 @@ import { IsEmail, IsNotEmpty, IsString, MaxLength, MinLength } from 'class-valid
 import UseCase from '../../UseCase'
 import { UseCaseInput } from '../../UseCaseInput'
 import { Author } from '../../entities/Author'
-import { AuthorOutput } from './AuthorUseCase'
+import { AuthorOutput } from './AuthorOutput'
 
 
 export class CreateAuthorInput extends UseCaseInput {
